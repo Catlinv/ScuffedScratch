@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+<!--    <script src="main.js"></script>-->
+    <title>Scuffed Scratch</title>
+</head>
+<body>
+<div id="controls">
+    <button id="clearButton" type="button">Clear</button>
+    <button id="deleteButton" type="button">Delete</button>
+    <hr>
+    <button id="executeButton" type="button">Execute</button>
+    <hr>
+    <p>Console</p>
+    <hr>
+    <div id="console"></div>
+</div>
+
+<div id="menu">
+    <p>Add Element</p>
+    <hr>
+    <div id='ifButton' class="new">IF</div>
+    <div id='setVariableButton' class="new">SET VARIABLE</div>
+    <div id='operationVariablesButton' class="new">VARIABLE OPERATION</div>
+    <div id='displayVariableButton' class="new">PRINT VARIABLE</div>
+    <div id='displayTextButton' class="new">PRINT TEXT</div>
+</div>
+
+<div class="movable" id="start" style="top: 0; left: 320px">
+    <p>
+        <span class="prev"></span>
+        <span class="next"></span>
+        <br>
+        Start
+    </p>
+</div>
+
+<div class="movable" id="end" style="top: 100px; left: 320px">
+    <p>
+        <span class="prev"></span>
+        <span class="next"></span>
+        <br>
+        End
+    </p>
+</div>
+
+<script src="main.js"></script>
+
+<script src="buttons/execute.js"></script>
+<script src="buttons/delete.js"></script>
+<script src="buttons/clear.js"></script>
+
+<script src="blocks/displayText.js"></script>
+<script src="blocks/setVariable.js"></script>
+<script src="blocks/displayVariable.js"></script>
+<script src="blocks/operationVariable.js"></script>
+<script src="blocks/if.js"></script>
+</body>
+</html>
